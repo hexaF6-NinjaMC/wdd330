@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>A Simple Calculator | Week 2 - WDD330</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Aaron Bechtel">
+        <meta name="description" content="2nd week, 1st Team assignment for WDD 330: Web Frontend Development II at Brigham Young University - Idaho.">
+    </head>
+
+    <body>
+        <input type="text" id="input1"><br>
+        <input type="text" id="input2">
+        <div id="display"></div><br>
+        <button id="submitAdd" onclick="displayResult(addNumbers(getFirstInput(), getSecondInput()))">&plus;</button>
+        <button id="submitMinus" onclick="displayResult(subtractNumbers(getFirstInput(), getSecondInput()))">&minus;</button>
+        <button id="submitMultiply" onclick="displayResult(multiplyNumbers(getFirstInput(), getSecondInput()))">&times;</button>
+        <button id="submitDivide" onclick="displayResult(divideNumbers(getFirstInput(), getSecondInput()))">&divide;</button>
+    </body>
+
+    <script>
+        function getFirstInput() {
+            const inputVal1 = document.querySelector('#input1').value;
+            return inputVal1;
+        }
+
+        function getSecondInput() {
+            const inputVal2 = document.querySelector('#input2').value;
+            return inputVal2;
+        }
+
+        function addNumbers(input1, input2) {
+            const sum = Number(input1) + Number(input2);    //Industry-preferred way to convert input to numbers.
+            return sum;
+        }
+
+        function subtractNumbers(input1, input2) {
+            //input1 is minuend, input2 is subtrahend.
+            //I.E., in 7-3=4, 7 is minuend (input1), 3 is subtrahend (input2), and 4 is difference (result).
+            const difference = Number(input1) - Number(input2);    //Industry-preferred way to convert input to numbers.
+            return difference;
+        }
+
+        function multiplyNumbers(input1, input2) {
+            const product = Number(input1) * Number(input2);    //Industry-preferred way to convert input to numbers.
+            return product;
+        }
+
+        function divideNumbers(input1, input2) {
+            //input1 is dividend, input2 is divisor.
+            //I.E., in 8/4=2, 8 is dividend (input1), 4 is divisor (input2), and 2 is quotient (result).
+            const quotient = Number(input1) / Number(input2);    //Industry-preferred way to convert input to numbers.
+            return quotient;
+        }
+
+        function displayResult(result) {
+            const divElem = document.querySelector('#display');
+            divElem.innerHTML = result;
+        }
+    </script>
+</html>
