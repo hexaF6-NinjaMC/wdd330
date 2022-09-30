@@ -1,0 +1,38 @@
+noticed error? within book (Ch. 2, Arithmetic Ops):
+
+"&code<pre" as answer to multiplication of numbers. Googled what this could be, seems to be a <pre> tag displayed in a <code> section? Probably needs to say "<< 42"...
+
+
+
+It appears the difference between Modulo and Remainder operators ("mod" and "rem", respectively) are different such that it depends on the sign of the dividend and divisor. If dividend and divisor are same, modulo returns same sign, whereas if different, modulo returns same sign as dividend(?).
+
+https://stackoverflow.com/questions/17524673/understanding-the-modulus-operator#:~:text=As%20others%20have,1)%20%3D%20%2D5%2B3
+
+
+
+"An array is an ordered list of values."
+
+Arrays' methods are very similar to lists', as the values within are accessed by index. If nothing is held within the array, trying to access a value returns "undefined".
+
+Merging arrays can be done using the concat() method, creating an, not overwriting an existing, array, seems temporary in memory. To update existing array, reassign to itself.
+
+Push() appends to end of array, unshift() to beginning.
+
+Join() will return a String containing all items in sequence.
+
+	-Attribute of Join() can be separated with separator (like '&') instead of commas (,). Check for spaces, as this separator is a String!
+
+i.e., join('&') returns
+
+'[text]&[text]', and join(' & ') returns
+
+'[text] & [text]'.
+
+Splice() method will change array value permanently (destructive method).
+
+
+
+Functions are essentially labelled like methods, using () after function names.
+
+Rest operator (denoted with '...[argument_value]', or three dots prior) collects arguments into an array.
+
