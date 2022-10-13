@@ -10,6 +10,14 @@ const links = [
     {
         label: "Week 3 notes",
         url: "./notes/w03_c5Objects_c6DOM_c7Events.html"
+    },
+    {
+        label: "Week 4 notes",
+        url: "./notes/w04_c8Forms_c12OOP_c15ModernJS.html"
+    },
+    {
+        label: "Week 5 notes",
+        url: "./notes/w03_c5Objects_c6DOM_c7Events.html"
     }
 ]
 
