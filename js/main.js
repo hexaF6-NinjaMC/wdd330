@@ -17,7 +17,7 @@ const links = [
     },
     {
         label: "Week 5 notes",
-        url: "./notes/w03_c5Objects_c6DOM_c7Events.html"
+        url: "./notes/w05_c10TestingAndDebugging.html"
     }
 ]
 
