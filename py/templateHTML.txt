@@ -11,7 +11,7 @@
         </header>
         
         <main>
-            <a href="/./index.html"> &Lt; Go Back to Portal</a>
+            <a href="./index.html"> &Lt; Go Back to Portal</a>
             <h2>The Notes:</h2><#splitter>
         </main>
 
