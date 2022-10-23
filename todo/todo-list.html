@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Challenge One: Todo | WDD 330 - WebDev II</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html"> &Lt; Go Back to Portal</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Todos:</h1>
+            <ul id="todo-list">
+            </ul>
+
+            <div id="task-footer">
+                <div id="tasks-left-count"></div>
+                <div class="filters">
+                    <button type="button" id="all" onclick="filterAllWithActiveDefault()">All</button>
+                    <button type="button" id="active" onclick="filterActive()">Active</button>
+                    <button type="button" id="completed" onclick="filterCompleted()">Completed</button>
+                </div>
+            </div>
+            <form name="add-task-form">
+                <input type="text" id="addTask" placeholder="Add task">
+                <button type="button" id="addTaskBtn">+</button>
+            </form>
+            
+        </main>
+
+        <footer>
+            <script src="js/main.js" type="module"></script>
+        </footer>
+    </body>
+</html>
