@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Weekly Notes</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <header>
+            <h1>This is the header for the Week <span class="weekNumber">08</span>'s Notes.</h1>
+        </header>
+        
+        <main>
+            <a href="../index.html"> &Lt; Go Back to Portal</a>
+            <h2>The Notes:</h2>
+<h2>CSS3 Transforms and Translations:</h2><h3>Transforms:</h3><ul><li>Transform: property that lets you rotate, translate, scale, and/or skew any element.<ul><li>The value of this property is one or more transform functions, separated by spaces, applied in order as they are provided.</li></ul></li></ul><h4>Translation:</h4><ul><li><ul><li><ul><li>The <em>translate(x,y)</em> function allows you to move elements up, down, left, and right. It is similar to the behavior of <em>position: relative;</em> when declaring <em>top </em>and <em>left</em>, moving elements along the x and y axes.</li><li>This moves elements without impacting the document flow.</li><li>Unlike <em>position: relative;</em> (which allows to position an element either against its current position or a parent/other ancestor), a translated element can <strong><em>only</em></strong> be moved <em>relative</em> to its current position.</li><li>The function <em>translate(x,y)</em> moves an element <em>x</em> from the <strong>left</strong>, and <em>y</em> from the <strong>top</strong>.</li><li><strong>Note: transforms require vendor prefixing for IE9, Android (up to 4.4.3), iOS8, and Blackberry 10.</strong></li></ul></li></ul></li></ul><h4>Scaling:</h4><ul><li><ul><li><ul><li><em>scale(x,y)</em>: scales an element by the defined factors, <strong>horizontally, </strong>then<strong> vertically</strong>.</li><li>A scaled element will grow outwards from or shrink inwards towards its <em>center</em>, keeping the center of the element at the same relative position as its dimensions change. To change this default behavior, use the <em>transform-origin</em> property.</li><li>Scaling is like translating, having no impact on the document flow.</li></ul></li></ul></li></ul><h2>Canvas, SVG, and Drag-and-Drop:</h2><h3>Canvas API:</h3><ul><li>Supported in:<ul><li>Chrome 4+</li><li>Firefox 2+</li><li>Opera 9.6+</li><li>Safari 3.1+</li><li>iOS 3.2+</li><li>Internet Explorer 9.0+</li><li>and Android 3.0+</li></ul></li></ul><h3><a id="_SVG:"></a>SVG:</h3><ul><li>Supported in:<ul><li>Chrome 4+</li><li>Firefox 3+</li><li>Opera 9.6+</li><li>Safari 3.2+</li><li>iOS 3.2+</li><li>Internet Explorer 9.0+</li><li>and Android 4.4+</li></ul></li><li>Unlike Canvas, SVG images are accessible via the DOM</li></ul><h4>Drawing in SVG:</h4><ul><li><a href="https://www.sitepoint.com/premium/books/html5-css3-for-the-real-world-2nd-edition/read/12/jzj69b3w/?fromShare=true">Drawing a circle in SVG</a> is easier than in canvas. It is done using:<ul><li><ul><li>&lt;svg xmlns={{ http://www.w3.org/2000/svg }} viewbox={{ 0 0 400 400 }}&gt;<ul><li>&lt;circle cx={{ 50 }} cy={{ 50 }} r={{ 25 }} fill={{ red }}/&gt;</li></ul></li><li>&lt;/svg&gt;</li></ul></li><li>The <em>viewbox</em> attribute defines the starting location, width, and height of the SVG image.</li><li>The <em>circle</em> element defines a circle, with <em>cx</em> and <em>cy</em> as the X and Y coordinates of the center of the circle. The radius is represented by <em>r</em>, while <em>fill</em> defines the fill style.</li><li>To view an SVG file, simply open it using the File menu in any browser that <a href="#_SVG:">supports</a> SVG.</li></ul></li></ul><h3>Drag-and-Drop:</h3><ul><li>Drag and Drop is supported in:<ul><li>All recent versions of Chrome, Firefox, and Safari</li><li>Partial support in Internet Explorer 7.0+ (IE10 does not allow setting the drag image, but supports all other features)</li><li>Opera 12+</li></ul></li><li>The API is unsupported by Android, and by design in iOS (Apple redirects you to use the <a href="http://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/HandlingEvents/HandlingEvents.html">DOM Touch API</a> instead).</li><li>There are two kinds of functionality that are most important: dragging files from your computer to the webpage, in combination with the File API, or <a href="https://www.sitepoint.com/premium/books/html5-css3-for-the-real-world-2nd-edition/read/12/jzj69b67/?fromShare=true">dragging elements into other elements on the same page.</a></li></ul>
+
+        </main>
+
+        <footer>
+            <h3>This is the footer for the Week <span class="weekNumber">08</span>'s Notes.</footer>
+        </footer>
+    </body>
+</html>
