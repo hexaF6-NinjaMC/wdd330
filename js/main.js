@@ -34,6 +34,10 @@ const links = [
     {
         label: "Week 9 notes",
         url: "./notes/w09_c9TheWindowObject_c14HTML5-APIs.html"
+    },
+    {
+        label: "Week 10 Proposal",
+        url: "./semesterProject/w10_projectHighlights.html"
     }
 ]
 
