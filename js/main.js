@@ -38,6 +38,10 @@ const links = [
     {
         label: "Week 10 Proposal",
         url: "./semesterProject/w10_projectHighlights.html"
+    },
+    {
+        label: "Week 10 Notes",
+        url: "./notes/w10_MDN-ValidatingForms_MDN-UsingFetch.html"
     }
 ]
 
