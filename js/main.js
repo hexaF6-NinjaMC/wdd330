@@ -42,6 +42,10 @@ const links = [
     {
         label: "Week 10 Notes",
         url: "./notes/w10_MDN-ValidatingForms_MDN-UsingFetch.html"
+    },
+    {
+        label: "Window.print() testing",
+        url: "./semesterProject/windowPrintTest/window-print-func-test.html"
     }
 ]
 
