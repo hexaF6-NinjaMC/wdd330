@@ -1,0 +1,7 @@
+.printBtn {
+    display: inline;
+    border: 1em solid transparent;
+    background-color: red;
+    color: whitesmoke;
+    font-size: large;
+}
