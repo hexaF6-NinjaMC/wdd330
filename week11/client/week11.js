@@ -58,6 +58,6 @@ async function createPost() {
             myErrors.handleError(error);
         }
     } else {
-        myErrors.displayError({ message: 'Title and Content are reuquired.' })
+        myErrors.displayError({ message: 'Title and Content are required.' })
     }
 }
