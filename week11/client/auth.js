@@ -26,7 +26,7 @@ export default class Auth {
       // you can pass a query to the API by appending it on the end of the url like this: 'users?email=' + email
       this.user = await this.getCurrentUser(username.value);
       console.log(data);
-      
+
       // hide the login form.
       hideLogin();
       // clear the password
@@ -34,7 +34,7 @@ export default class Auth {
       // clear any errors from the login process
       this.errors.clearError();
       // since we have a token let's go grab some data from the API by executing the callback if one was passed in
-      if(callback) {
+      if (callback) {
         callback();
       }
     } catch (error) {
