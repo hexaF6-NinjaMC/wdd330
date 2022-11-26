@@ -1,0 +1,35 @@
+fieldset {
+    margin: 0 auto;
+    max-width: fit-content;
+    border-color: cornflowerblue;
+}
+
+legend {
+    color: #0b4263;
+}
+
+label {
+    display: inline-block;
+    width: 5em;
+    height: 1.75em;
+    text-align: end;
+    color: #3a3a3a;
+}
+
+input[type="password"], input[type="email"] {
+    height: 1.75em;
+    width: 15em;
+}
+
+input[type="submit"] {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #0b4263;
+    color: white;
+    border-color: cadetblue;
+}
+
+.hidden {
+    display: none;
+}
