@@ -18,26 +18,29 @@
                 <form name="login" autocomplete="on">
                     <fieldset>
                         <legend>Login:</legend>
-                        <label for="username">Email:</label>
-                        <input type="email" id="username" required placeholder="my.email.address@example.com" autofocus value="user1@email.com"><br>
+                        <label for="username">Username/Email:</label>
+                        <input type="text" id="username" required placeholder="Enter your username or email address here" autofocus><br>
                         <label for="password">Password:</label>
-                        <input type="password" id="password" required placeholder="******" autocomplete="on"><br>
+                        <input type="password" id="password" required placeholder="Password"><br>
                         <input type="submit" value="Login" id="submitBtn">
                     </fieldset>
                 </form>
             </div>
             <div id="content" class="hidden">
                 <form name="postForm">
-                    <div>
-                        <label for="title">Title:</label>
-                        <input type="text" class="form-control" name="title" placeholder="title" required>
-                    </div>
-                    <div>
-                        <label for="content">Content:</label>
-                        <input type="text" class="form-control" name="content" placeholder="content" required>
-                    </div>
-                    <div id="postError"></div>
-                    <input type="submit" id="createSubmit" value="Create Submission">
+                    <fieldset>
+                        <legend>Create new post:</legend>
+                        <div>
+                            <label for="title">Title:</label>
+                            <input type="text" class="form-control" name="title" placeholder="title" required>
+                        </div>
+                        <div>
+                            <label for="content">Content:</label>
+                            <input type="text" class="form-control" name="content" placeholder="content" required>
+                        </div>
+                        <div id="postError"></div>
+                        <input type="button" id="createSubmit" value="Create Submission">
+                    </fieldset>
                 </form>
                 <ul id="list"></ul>
             </div>

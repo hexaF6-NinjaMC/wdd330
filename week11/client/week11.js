@@ -10,7 +10,8 @@ const myErrors = new Errors('errors');
 const authenticator = new Auth(myErrors);
 
 const loginForm = document.querySelector('#login');
-loginForm.querySelector('#submitBtn').addEventListener('click', () => {
+loginForm.querySelector('#submitBtn').addEventListener('click', (e) => {
+    e.preventDefault();
     authenticator.login(getPosts);
 });
 
@@ -34,7 +35,8 @@ async function getPosts() {
     }
 }
 
-document.querySelector('#createSubmit').addEventListener('click', () => {
+document.querySelector('#createSubmit').addEventListener('click', (e) => {
+    e.preventDefault();
     createPost();
 });
 

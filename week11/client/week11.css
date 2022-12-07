@@ -10,18 +10,18 @@ legend {
 
 label {
     display: inline-block;
-    width: 5em;
+    width: 10em;
     height: 1.75em;
     text-align: end;
     color: #3a3a3a;
 }
 
-input[type="password"], input[type="email"] {
+input[type="password"], input[type="text"] {
     height: 1.75em;
-    width: 15em;
+    width: 20em;
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="button"] {
     display: block;
     text-align: center;
     margin: 0 auto;
