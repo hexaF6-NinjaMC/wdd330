@@ -1,0 +1,55 @@
+:root {
+    --textPrimaryColor: #575252;
+    --textSecondaryColor: #FFFFFF;
+    --backButtonColor: #DBDBDB;
+    --backPrimaryColor: #FFFFFF;
+    --backSecondaryColor: #0076B6;
+    --backTertiaryColor: #000000;
+    --eventBorderColor: #1C9FEF;
+}
+
+body {
+    font-family: "Lato Extended", Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: var(--textPrimaryColor)
+}
+
+fieldset {
+    border-color: var(--backSecondaryColor);
+    color: var(--backSecondaryColor);
+    font-size: 1.5em;
+    max-width: fit-content;
+}
+
+label {
+    color: var(--textPrimaryColor);
+    font-size: 0.75em;
+}
+
+label[for="comments"] {
+    display: inline-block;
+}
+
+textarea {
+    margin-top: .5em;
+}
+
+#requiredNote {
+    color: var(--textPrimaryColor);
+}
+
+.required {
+    color: red;
+}
+
+input {
+    height: 1.75em;
+}
+
+#createEventBtn {
+    background-color: var(--backButtonColor);
+    border-color: var(--backSecondaryColor);
+}
+
+.hidden {
+    display: none;
+}

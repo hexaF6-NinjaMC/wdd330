@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Weekly Planner - Semester Project Fall 2022 | WDD-330</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/semester-style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>This is the header for the Semester Project.</h1>
+        </header>
+        
+        <main>
+            <a href="../../index.html">&Lt; Go Back to Portal</a>
+            <h2>Weekly Planner:</h2>
+            <div id="planner">
+                <form name="eventCreator">
+                    <fieldset>
+                        <legend>Create New Event:</legend>
+                        <div id="requiredNote">
+                            <p><span class="required">*</span> = Required</p>
+                        </div>
+                        <label for="eTitle"><span class="required">*</span>Event Title:</label>
+                        <input type="text" id="eTitle" required placeholder="Title" autofocus>
+                        <label for="priorityCheckBox">Mark a Priority:</label>
+                        <input type="checkbox" id="priorityCheckBox">
+                        <br>
+                        <label for="date"><span class="required">*</span>Choose date:</label>
+                        <input id="date" type="date" required placeholder="mm-dd-yyyy">
+                        <br>
+                        <label for="startTime"><span class="required">*</span>Start Time:</label>
+                        <input type="time" step="1" id="startTime" required>
+                        <label for="endTime"><span class="required">*</span>End Time:</label>
+                        <input type="time" step="1" id="endTime" required>
+                        <br>
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments"></textarea>
+                        <br>
+                        <input type="button" value="Create Event" id="createEventBtn">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <h3>This is the footer for the Semester Project.</footer>
+        </footer>
+        <script src="../js/weekly-planner.js" type="module"></script>
+    </body>
+</html>
