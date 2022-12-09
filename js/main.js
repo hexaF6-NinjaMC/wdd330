@@ -46,6 +46,10 @@ const links = [
     {
         label: "Window.print() testing",
         url: "./semesterProject/windowPrintTest/window-print-func-test.html"
+    },
+    {
+        label: "Semester Project",
+        url: "./semesterProject/html/weeklyPlanner.html"
     }
 ]
 
