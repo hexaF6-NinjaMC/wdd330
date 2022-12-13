@@ -6,6 +6,7 @@
     --backSecondaryColor: #0076B6;
     --backTertiaryColor: #000000;
     --eventBorderColor: #1C9FEF;
+    --viewportWidth: 80vw;
 }
 
 body {
@@ -13,11 +14,29 @@ body {
     color: var(--textPrimaryColor)
 }
 
+header, footer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#docTitle, #printBtn {
+    text-align: center;
+}
+
+#printer {
+    border: 1em solid transparent;
+    border-radius: .75rem;
+    color: white;
+    background-color: red;
+    font-size: large;
+}
+
 fieldset {
     border-color: var(--backSecondaryColor);
     color: var(--backSecondaryColor);
     font-size: 1.5em;
     max-width: fit-content;
+    margin: 0 auto;
 }
 
 label {
@@ -48,8 +67,27 @@ input {
 #createEventBtn {
     background-color: var(--backButtonColor);
     border-color: var(--backSecondaryColor);
+    display: block;
+    margin: 0 auto;
 }
 
 .hidden {
     display: none;
+}
+
+button {
+    max-width: fit-content;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    max-width: var(--viewportWidth)/2;
+    margin: 0 auto;
 }

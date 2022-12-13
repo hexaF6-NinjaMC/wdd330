@@ -8,12 +8,15 @@
 
     <body>
         <header>
-            <h1>This is the header for the Semester Project.</h1>
+            <h1>Weekly Planner - A Semester Project for WDD330.</h1>
         </header>
         
         <main>
-            <a href="../../index.html">&Lt; Go Back to Portal</a>
-            <h2>Weekly Planner:</h2>
+            <a href="../../index.html" id="portalLink">&Lt; Go Back to Portal</a>
+            <h2 id="docTitle">Your Weekly Planner:</h2>
+            <div id="printBtn">
+                <button type="button" id="printer">Print</button>
+            </div>
             <div id="planner">
                 <form name="eventCreator">
                     <fieldset>
@@ -37,15 +40,16 @@
                         <label for="comments">Comments:</label>
                         <textarea id="comments"></textarea>
                         <br>
-                        <input type="button" value="Create Event" id="createEventBtn">
+                        <input type="submit" value="Create Event" id="createEventBtn">
                     </fieldset>
                 </form>
             </div>
         </main>
 
         <footer>
-            <h3>This is the footer for the Semester Project.</footer>
+            <h3>This page is &copy;2022 Aaron Bechtel.</footer>
         </footer>
         <script src="../js/weekly-planner.js" type="module"></script>
+        <script src="../js/printer.js"></script>
     </body>
 </html>
