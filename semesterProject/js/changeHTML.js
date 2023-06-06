@@ -28,7 +28,7 @@ export function postToHTML() {
             if (priorityBool === true) {
                 priorityText = " - Priority"
             }
-            let date = new Date(e.date);
+            let date = e.date;
             let dateString = date.toDateString();
             let start = e.start;
             let end = e.end;
