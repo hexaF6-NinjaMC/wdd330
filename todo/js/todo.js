@@ -38,10 +38,13 @@ function getToDos(key) {
 
 function renderToDoList(taskList, element) {
     /*
+    clear element (ul), and reappend data following.
     for each task in taskList, build a li element for the task, and append it to element.
     taskList (Array): The list of tasks to render to HTML
     element (Element): The DOM element to insert our taskList elements into.
     */
+
+    element.replaceChildren();
     
     taskList.forEach(task => {
         element.append(renderOneToDo(task));
