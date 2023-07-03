@@ -1,4 +1,4 @@
-import { readFromLS, writeToLS } from "./ls.js";
+import { readFromLS, writeToLS, removeLS } from "./ls.js";
 import { qsFn } from "./utilities.js";
 
 let todoList = [];
@@ -69,5 +69,6 @@ function saveToDo(task, key) {
     todoObj = { id: timestamp, content: content, completed: completed };
 
     todoList.push(todoObj);
+    removeLS(key);
     writeToLS(key, todoList);
 }
