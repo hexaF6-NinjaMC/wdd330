@@ -53,7 +53,7 @@ function renderToDoList(taskList, element) {
 
 function renderOneToDo(task) {
     const item = document.createElement("li");
-    item.innerHTML = `<input type="checkbox" class=""><div class="task-name">${task.content}</div><input type="button" value="X" class="removeBtn">`;
+    item.innerHTML = `<input type="checkbox" class=""><div class="task-name">${task.content}</div><input type="button" value="X" class="removeBtn" onclick="removeTask()">`;
     return item;
 }
 
