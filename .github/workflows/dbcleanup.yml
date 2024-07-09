@@ -39,4 +39,4 @@ jobs:
         }
         EOF
         )
-        echo $DB_CLEANUP >> ../../week11/auth/json-server/database.json
+        echo "$DB_CLEANUP" >> "../week11/auth/json-server/database.json"
