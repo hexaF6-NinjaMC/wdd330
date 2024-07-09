@@ -41,5 +41,5 @@ jobs:
         )
         echo $DB_CLEANUP >> ../week11/auth/json-server/database.json
         git diff
-        git add CHANGELOG.md ../week11/auth/json-server/database.json
+        git add ../week11/auth/json-server/database.json
         git commit --message "Cleaned database JSON file to defaults."
