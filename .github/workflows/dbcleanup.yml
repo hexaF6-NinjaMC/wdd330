@@ -17,9 +17,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - uses: actions/checkout@v2
     # Runs a single command using the runners shell
     - name: Clean database.json
       run: |
+        ls
         DB_CLEANUP=$(cat << EOF
         {
           "users": [
