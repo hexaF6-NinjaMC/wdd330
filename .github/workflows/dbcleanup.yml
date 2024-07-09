@@ -22,6 +22,8 @@ jobs:
     - name: Clean database.json
       run: |
         ls
+        cd week11
+        ls
         DB_CLEANUP=$(cat << EOF
         {
           "users": [
