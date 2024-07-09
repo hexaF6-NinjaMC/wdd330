@@ -41,5 +41,7 @@ jobs:
         )
         echo $DB_CLEANUP >> ../week11/auth/json-server/database.json
         git diff
+        git config --global user.email "bechtel.aaron22@gmail.com"
+        git config --global user.name "hexaF6-NinjaMC"
         git add ../week11/auth/json-server/database.json
         git commit --message "Cleaned database JSON file to defaults."
