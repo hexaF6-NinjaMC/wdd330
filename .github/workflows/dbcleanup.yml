@@ -21,7 +21,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Clean database.json
       run: |
-        cd week11/auth/json-server
+        cd week11
         DB_CLEANUP=$(cat << EOF
         {
           "users": [
@@ -39,5 +39,7 @@ jobs:
         }
         EOF
         )
-        echo "$DB_CLEANUP" >> "../json-server/database.json"
-        vim ../json-server/database.json
+        echo $DB_CLEANUP >> ../week11/auth/json-server/database.json
+        git diff
+        git add CHANGELOG.md ../week11/auth/json-server/database.json
+        git commit --message "Cleaned database JSON file to defaults."
