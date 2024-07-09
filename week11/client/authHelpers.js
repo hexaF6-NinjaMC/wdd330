@@ -1,3 +1,5 @@
+import path from "path";
+
 export class Errors {
     constructor(errorElementId) {
         this.errorElement = document.querySelector(`#${errorElementId}`);
@@ -26,7 +28,7 @@ export class Errors {
 }
 
 // Server Address
-const baseURL = 'http://127.0.0.1:3000/';
+const baseURL = path.resolve('../../' + '/auth/');
 
 // helper function to make an http request with fetch.
 // returns a json object
