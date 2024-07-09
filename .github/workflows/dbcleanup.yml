@@ -20,8 +20,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Clean database.json
       run: |
-        echo
-        "{
+        DB_CLEANUP=$(cat << EOF
+        {
           "users": [
             {
               "id": 1,
@@ -34,4 +34,7 @@ jobs:
             }
           ],
           "posts": []
-        }" > week11/auth/json-server/database.json
+        }
+        EOF
+        )
+        echo $DB_CLEANUP >> ../../week11/auth/json-server/database.json
