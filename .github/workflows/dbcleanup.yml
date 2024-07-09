@@ -34,4 +34,4 @@ jobs:
             }
           ],
           "posts": []
-        }" > ./week11/auth/json-server/database.json
+        }" > week11/auth/json-server/database.json
