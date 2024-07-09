@@ -1,12 +1,12 @@
-# This is a basic workflow that is manually triggered
+# This is a basic workflow that is scheduled to clean the database JSON file
 
-name: Manual workflow
+name: Database Cleanup
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
   schedule:
-  - cron: "15 9 * * *"
+  - cron: "0 10 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
