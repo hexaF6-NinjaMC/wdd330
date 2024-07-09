@@ -41,6 +41,7 @@ jobs:
         EOF
         
         )
+        : > ../week11/auth/json-server/database.json
         echo $DB_CLEANUP >> ../week11/auth/json-server/database.json
         git diff
         git config --global user.email "bechtel.aaron22@gmail.com"
