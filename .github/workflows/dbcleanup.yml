@@ -37,7 +37,9 @@ jobs:
           ],
           "posts": []
         }
+        
         EOF
+        
         )
         echo $DB_CLEANUP >> ../week11/auth/json-server/database.json
         git diff
@@ -45,3 +47,4 @@ jobs:
         git config --global user.name "hexaF6-NinjaMC"
         git add ../week11/auth/json-server/database.json
         git commit --message "Cleaned database JSON file to defaults."
+        git push
